@@ -1,0 +1,218 @@
+/* Reset margin dan padding default */
+body, h1, h2, p, ul, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Atur font dan warna dasar */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header */
+header {
+    background-color: #520ff0;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 3px solid #f8f8f8; /* Garis bawah header untuk pemisahan visual */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo img {
+    max-width: 100px; /* Atur ukuran logo sesuai kebutuhan */
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+.header-text h2 {
+    font-size: 1.25rem;
+    color: #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+ nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* About page styling */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+     
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Perangkat Sedang (Tablet) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .about-content {
+        flex-direction: row;
+    }
+    
+    .about-image {
+        max-width: 50%;
+    }
+}
